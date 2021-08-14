@@ -1,5 +1,7 @@
 # Must-Solve-C-Programming-Questions
- All Basic C Programs Covered
+ All Basic C Programs Covered by categories:
+ 
+CATEGORY 1: Control Statements (Looping) & Recursion
  
 Listed some most asked C programming questions/examples based on their difficulty level.
 
