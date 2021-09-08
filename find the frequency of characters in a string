@@ -1,0 +1,60 @@
+//C program to find the frequency of characters in a string
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+   char string[100];
+   int c = 0, count[26] = {0}, x;
+
+   printf("Enter a string\n");
+   gets(string);
+
+   while (string[c] != '\0') {
+   /** Considering characters from 'a' to 'z' only and ignoring others. */
+
+      if (string[c] >= 'a' && string[c] <= 'z') {
+         x = string[c] - 'a';
+         count[x]++;
+      }
+
+      c++;
+   }
+
+   for (c = 0; c < 26; c++)
+         printf("%c occurs %d times in the string.\n", c + 'a', count[c]);
+
+   return 0;
+}
+
+/*Calculating frequency using function 
+#include <stdio.h>
+#include <string.h>
+void find_frequency(char [], int []);
+ 
+int main()
+{
+   char string[100];
+   int c, count[26] = {0};
+ 
+   printf("Input a string\n");
+   gets(string);
+ 
+   find_frequency(string, count);
+   
+   printf("Character Count\n");
+   
+   for (c = 0 ; c < 26 ; c++)
+      printf("%c \t  %d\n", c + 'a', count[c]);
+ 
+   return 0;
+}
+
+void find_frequency(char s[], int count[]) {
+   int c = 0;
+   
+   while (s[c] != '\0') {
+      if (s[c] >= 'a' && s[c] <= 'z' )
+         count[s[c]-'a']++;
+      c++;
+   }
+}*/
