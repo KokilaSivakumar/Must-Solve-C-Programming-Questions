@@ -1,0 +1,25 @@
+/**C program to print Fibonacci series up to a limit*/ 
+#include<stdio.h>
+int main()
+{
+      //To initialize variables 
+      int a = 0,b = 1,c,limit,i;
+
+      //To take user input
+      printf("enter a limit of series \n");
+      scanf( "%d",&limit);
+
+      printf("Fibonacci series %d %d ",a,b);
+
+      //To use this loop for given length
+      for(i=2;i<limit;i++)
+      {
+           //a and b sum  store in new variable c
+           c=a+b;   
+           a=b;
+           b=c;
+         //display serious 
+          printf("%d ",c);
+      }
+     return 0;
+}
